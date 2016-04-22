@@ -15,10 +15,18 @@ class ContentViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     
+    var imageName: String!
+    var titleName: String!
+    
+    var orderNumber: Int!
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        titleLabel.text = titleName
+        imageView.image = UIImage(named: imageName)
 
     }
 
